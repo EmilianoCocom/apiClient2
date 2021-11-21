@@ -16,7 +16,7 @@ class OauthController extends Controller
             'client_id' => config('services.apilaravel.client_id'),
             'redirect_uri' => route('callback'),
             'response_type' => 'code',
-            'scope' => '',
+            'scope' => 'create-post read-post update-post delete-post',
             'state' => $state,
         ]);
 
